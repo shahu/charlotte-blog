@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Charlotte's Handmade Stuffed Toys</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Charlotte's Stuffed Toys</h1>
+                    <p>Handmade with Love</p>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Our Magical Collection</h2>
+                <p>Explore the wonderful world of handmade stuffed toys</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Primary Content -->
+                <div class="primary-content">
+                    <!-- Filter Navigation -->
+                    <div class="gallery-filters">
+                        <button class="filter-btn active" data-filter="all">All Toys</button>
+                        <button class="filter-btn" data-filter="bears">Teddy Bears</button>
+                        <button class="filter-btn" data-filter="unicorns">Unicorns</button>
+                        <button class="filter-btn" data-filter="bunnies">Bunnies</button>
+                        <button class="filter-btn" data-filter="cats-dogs">Cats & Dogs</button>
+                        <button class="filter-btn" data-filter="fantasy">Fantasy</button>
+                    </div>
+
+                    <!-- Gallery Grid -->
+                    <div class="gallery-grid">
+                        <!-- Teddy Bears -->
+                        <div class="gallery-item" data-category="bears">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <div class="image-placeholder bears-bg">🧸</div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h3>Classic Brown Bear</h3>
+                                    <p>Traditional teddy bear with golden brown fur and friendly smile.</p>
+                                    <span class="size">Size: 12 inches</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="bears">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <div class="image-placeholder bears-bg">🧸</div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h3>Honey Bear</h3>
+                                    <p>Sweet honey-colored bear with embroidered heart.</p>
+                                    <span class="size">Size: 10 inches</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Unicorns -->
+                        <div class="gallery-item" data-category="unicorns">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <div class="image-placeholder unicorn-bg">🦄</div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h3>Rainbow Unicorn</h3>
+                                    <p>Magical white unicorn with rainbow mane and silver horn.</p>
+                                    <span class="size">Size: 14 inches</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="unicorns">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <div class="image-placeholder unicorn-bg">🦄</div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h3>Pink Princess Unicorn</h3>
+                                    <p>Adorable pink unicorn with sparkly details and golden horn.</p>
+                                    <span class="size">Size: 12 inches</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bunnies -->
+                        <div class="gallery-item" data-category="bunnies">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <div class="image-placeholder bunny-bg">🐰</div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h3>Cotton Candy Bunny</h3>
+                                    <p>Soft pink bunny with long floppy ears and button nose.</p>
+                                    <span class="size">Size: 11 inches</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="bunnies">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <div class="image-placeholder bunny-bg">🐰</div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h3>Garden Bunny</h3>
+                                    <p>White bunny with floral embroidered details.</p>
+                                    <span class="size">Size: 9 inches</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cats & Dogs -->
+                        <div class="gallery-item" data-category="cats-dogs">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <div class="image-placeholder cat-bg">🐱</div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h3>Sleepy Kitten</h3>
+                                    <p>Gray striped kitten in sleeping position with pink nose.</p>
+                                    <span class="size">Size: 8 inches</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="cats-dogs">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <div class="image-placeholder dog-bg">🐶</div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h3>Golden Puppy</h3>
+                                    <p>Fluffy golden retriever puppy with wagging tail.</p>
+                                    <span class="size">Size: 13 inches</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fantasy Creatures -->
+                        <div class="gallery-item" data-category="fantasy">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <div class="image-placeholder dragon-bg">🐉</div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h3>Baby Dragon</h3>
+                                    <p>Friendly purple dragon with sparkly wings and kind eyes.</p>
+                                    <span class="size">Size: 15 inches</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="fantasy">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <div class="image-placeholder owl-bg">🦉</div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h3>Wise Owl</h3>
+                                    <p>Soft brown owl with large amber eyes and detailed feathers.</p>
+                                    <span class="size">Size: 10 inches</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- More Bears -->
+                        <div class="gallery-item" data-category="bears">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <div class="image-placeholder bears-bg">🧸</div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h3>Polar Bear Cub</h3>
+                                    <p>Fluffy white polar bear with black button eyes.</p>
+                                    <span class="size">Size: 16 inches</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- More Bunnies -->
+                        <div class="gallery-item" data-category="bunnies">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <div class="image-placeholder bunny-bg">🐰</div>
+                                </div>
+                                <div class="gallery-info">
+                                    <h3>Chocolate Bunny</h3>
+                                    <p>Rich brown bunny with cream-colored belly and ears.</p>
+                                    <span class="size">Size: 12 inches</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-note">
+                        <p><strong>Note:</strong> All toys are made to order. Colors and details may vary slightly as each toy is uniquely handcrafted. Custom sizes and colors available upon request.</p>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="widget">
+                        <h3>Custom Orders</h3>
+                        <p>Love a design but want it in different colors? Need a specific size? I accept custom orders!</p>
+                        <ul class="custom-options">
+                            <li>Choose your favorite colors</li>
+                            <li>Add personalized embroidery</li>
+                            <li>Request different sizes</li>
+                            <li>Create completely unique designs</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Start Custom Order</a>
+                    </div>
+
+                    <div class="widget">
+                        <h3>Size Guide</h3>
+                        <div class="size-guide">
+                            <div class="size-item">
+                                <strong>Small (8-10 inches)</strong>
+                                <p>Perfect for little hands and travel companions</p>
+                            </div>
+                            <div class="size-item">
+                                <strong>Medium (11-13 inches)</strong>
+                                <p>Ideal for cuddling and display</p>
+                            </div>
+                            <div class="size-item">
+                                <strong>Large (14-16 inches)</strong>
+                                <p>Great for big hugs and statement pieces</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <h3>Care Instructions</h3>
+                        <ul class="care-list">
+                            <li>🧽 Spot clean with mild detergent</li>
+                            <li>🌊 Machine wash on gentle cycle if needed</li>
+                            <li>☀️ Air dry completely</li>
+                            <li>🧸 Brush gently to maintain softness</li>
+                            <li>💕 Give lots of love and cuddles!</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Charlotte's Stuffed Toys</h4>
+                    <p>Creating magical moments with handmade stuffed toys since 2020. Every toy tells a story.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: charlotte@stuffedtoys.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Workshop Hours: Mon-Fri 9AM-5PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Charlotte's Handmade Stuffed Toys. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

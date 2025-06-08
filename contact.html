@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Charlotte's Handmade Stuffed Toys</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Charlotte's Stuffed Toys</h1>
+                    <p>Handmade with Love</p>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Get in Touch</h2>
+                <p>Let's create something magical together!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Primary Content -->
+                <div class="primary-content">
+                    <div class="contact-intro">
+                        <h2>I'd Love to Hear From You!</h2>
+                        <p>Whether you're interested in a custom order, have questions about care instructions, or just want to share your stuffed toy stories, I'm here to help. Each message is important to me, and I personally respond to every inquiry.</p>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Please select...</option>
+                                <option value="custom-order">Custom Order Inquiry</option>
+                                <option value="existing-order">Question About Existing Order</option>
+                                <option value="care-instructions">Care Instructions</option>
+                                <option value="general">General Question</option>
+                                <option value="workshop-visit">Workshop Visit</option>
+                                <option value="wholesale">Wholesale Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="toy-type">If custom order, preferred toy type:</label>
+                            <select id="toy-type" name="toy-type">
+                                <option value="">Select toy type...</option>
+                                <option value="teddy-bear">Teddy Bear</option>
+                                <option value="unicorn">Unicorn</option>
+                                <option value="bunny">Bunny</option>
+                                <option value="cat">Cat</option>
+                                <option value="dog">Dog</option>
+                                <option value="dragon">Dragon</option>
+                                <option value="owl">Owl</option>
+                                <option value="other">Other (please specify in message)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your vision! Include details about colors, size preferences, special features, or any other ideas you have in mind."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span class="checkmark"></span>
+                                Subscribe to my newsletter for updates on new designs and workshop stories
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <div class="response-info">
+                        <h3>What Happens Next?</h3>
+                        <p>I typically respond to all inquiries within 24-48 hours. For custom orders, I'll provide a detailed quote including timeline and pricing. Don't worry if you're not sure about all the details yet – we can work together to bring your vision to life!</p>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="widget">
+                        <h3>Contact Information</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <strong>📧 Email</strong>
+                                <p>charlotte@stuffedtoys.com</p>
+                            </div>
+                            <div class="contact-item">
+                                <strong>📞 Phone</strong>
+                                <p>(555) 123-4567</p>
+                            </div>
+                            <div class="contact-item">
+                                <strong>🏠 Workshop Address</strong>
+                                <p>123 Craft Lane<br>
+                                Cozy Corner, CC 12345</p>
+                            </div>
+                            <div class="contact-item">
+                                <strong>🕒 Workshop Hours</strong>
+                                <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
+                                Saturday: 10:00 AM - 3:00 PM<br>
+                                Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <h3>Custom Order Process</h3>
+                        <div class="process-steps">
+                            <div class="step">
+                                <strong>1. Initial Consultation</strong>
+                                <p>We discuss your vision, size, colors, and special features.</p>
+                            </div>
+                            <div class="step">
+                                <strong>2. Design Sketch</strong>
+                                <p>I create a custom sketch for your approval.</p>
+                            </div>
+                            <div class="step">
+                                <strong>3. Creation</strong>
+                                <p>Your unique toy comes to life in my workshop (4-6 hours of work).</p>
+                            </div>
+                            <div class="step">
+                                <strong>4. Delivery</strong>
+                                <p>Your finished toy is carefully packaged and delivered.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <h3>Pricing Guide</h3>
+                        <div class="pricing-info">
+                            <div class="price-item">
+                                <strong>Standard Designs</strong>
+                                <p>Small (8-10"): $45-55<br>
+                                Medium (11-13"): $65-75<br>
+                                Large (14-16"): $85-95</p>
+                            </div>
+                            <div class="price-item">
+                                <strong>Custom Designs</strong>
+                                <p>Starting at $75 plus complexity<br>
+                                Detailed quote provided after consultation</p>
+                            </div>
+                        </div>
+                        <p><em>All prices include premium materials and craftsmanship.</em></p>
+                    </div>
+
+                    <div class="widget">
+                        <h3>Workshop Visits</h3>
+                        <p>Interested in seeing where the magic happens? I offer guided workshop tours by appointment!</p>
+                        <ul class="visit-info">
+                            <li>🎨 See the creation process</li>
+                            <li>🧵 Learn about materials</li>
+                            <li>☕ Enjoy tea and conversation</li>
+                            <li>📸 Great for social media content</li>
+                        </ul>
+                        <p><strong>Duration:</strong> 45 minutes<br>
+                        <strong>Cost:</strong> Free<br>
+                        <strong>Group size:</strong> Max 4 people</p>
+                    </div>
+
+                    <div class="widget">
+                        <h3>Follow My Journey</h3>
+                        <p>Stay connected for daily updates from the workshop!</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">📷 Instagram</a>
+                            <a href="#" class="social-link">📌 Pinterest</a>
+                            <a href="#" class="social-link">👥 Facebook</a>
+                            <a href="#" class="social-link">🐦 Twitter</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Charlotte's Stuffed Toys</h4>
+                    <p>Creating magical moments with handmade stuffed toys since 2020. Every toy tells a story.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: charlotte@stuffedtoys.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Workshop Hours: Mon-Fri 9AM-5PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Charlotte's Handmade Stuffed Toys. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
