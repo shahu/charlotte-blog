@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 9 - Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .curriculum-card {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid #d891a3;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .curriculum-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        .curriculum-card h3 {
+            color: #2c2c2c;
+            margin-bottom: 10px;
+        }
+        .card-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+        .card-content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Charlotte's Stuffed Toys</h1>
+                    <p>Handmade with Love</p>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li class="dropdown">
+                            <a href="academy.html" class="nav-link active">Academy</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="grade9.html" class="active">Grade 9</a></li>
+                                <li><a href="grade10.html">Grade 10</a></li>
+                                <li><a href="grade11.html">Grade 11</a></li>
+                                <li><a href="grade12.html">Grade 12</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="primary-content">
+                <h2>Grade 9: Science & Technology</h2>
+                <p>Click on each topic to see more details, including related AP course knowledge points and resources.</p>
+
+                <div class="curriculum-card">
+                    <h3>The Material World</h3>
+                    <div class="card-content">
+                        <h4>Quebec Learning Requirements:</h4>
+                        <p>Key concepts include characteristic properties (e.g., mass, volume, temperature), states of matter, acidity/alkalinity, physical and chemical changes, conservation of matter, mixtures, solutions, and separation techniques. These concepts lay the foundation for understanding material interactions and transformations.</p>
+                        <a href="material-world-details.html" class="btn btn-outline" style="margin-top: 15px;">Details</a>
+                    </div>
+                </div>
+
+                <div class="curriculum-card">
+                    <h3>The Living World</h3>
+                    <div class="card-content">
+                        <h4>Quebec Learning Requirements:</h4>
+                        <p>This area covers habitats, ecological niches, species, populations, physical and behavioral adaptations, evolution, taxonomy, genetics (genes, chromosomes), reproduction (asexual and sexual, including mechanisms in plants and animals), human development stages, contraception, sexually transmitted diseases, and cellular processes like photosynthesis, respiration, osmosis, and diffusion. It also includes characteristics of living things and cell structure visible under a microscope, providing a comprehensive view of life sciences.</p>
+                        <a href="living-world-details.html" class="btn btn-outline" style="margin-top: 15px;">Details</a>
+                    </div>
+                </div>
+
+                <div class="curriculum-card">
+                    <h3>Earth and Space</h3>
+                    <div class="card-content">
+                        <h4>Quebec Learning Requirements:</h4>
+                        <p>Key concepts include the internal structure of Earth (lithosphere, hydrosphere, atmosphere), types of rocks and minerals, atmospheric layers, water distribution, air composition, soil types, geological processes (tectonic plates, volcanoes, earthquakes, orogenesis, erosion), natural energy sources, the water cycle, renewable and nonrenewable resources, Universal Gravitation (qualitative study), solar system components, light properties, celestial cycles (day/night, moon phases, eclipses, seasons), and phenomena like comets, aurora borealis, and meteoroid impacts. This area connects Earth sciences with astronomical understanding.</p>
+                        <a href="earth-and-space-details.html" class="btn btn-outline" style="margin-top: 15px;">Details</a>
+                    </div>
+                </div>
+
+                <div class="curriculum-card">
+                    <h3>The Technological World</h3>
+                    <div class="card-content">
+                        <h4>Quebec Learning Requirements:</h4>
+                        <p>This area focuses on specifications, design plans, technical drawings, manufacturing processes, raw materials, equipment, systems (functions, inputs, processes, outputs, control), components, basic mechanical functions (links, guiding control), energy transformations, types of motion, effects of forces, simple machines, and mechanisms for transmitting or changing motion. It equips students with skills for technological design and engineering principles.</p>
+                        <a href="technological-world-details.html" class="btn btn-outline" style="margin-top: 15px;">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p style="text-align:center;">&copy; 2024 Charlotte's Handmade Stuffed Toys. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.curriculum-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const content = card.querySelector('.card-content');
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

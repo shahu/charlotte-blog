@@ -863,4 +863,44 @@ a:hover {
 
 .pricing-info .price-item:last-child {
     border-bottom: none;
+}
+
+/* ===== DROPDOWN MENU ===== */
+.main-nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.main-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.main-nav .dropdown-menu li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.main-nav .dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+}
+
+.main-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.main-nav .dropdown > a::after {
+    content: ' ▾';
+    font-size: 0.8em;
 } 
